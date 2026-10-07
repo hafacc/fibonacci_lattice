@@ -1,12 +1,16 @@
-"""Test irational module."""
+"""Test irrational module."""
 
 import numpy as np
 
-from fiblat._irrational import n_primes
+from fiblat._irrational import golden_powers
 
 
-def test_n_primes() -> None:
-    """Test that the n_primes function returns the first n primes."""
-    primes = np.array([2, 3, 5, 7, 11, 13], "i8")
-    for i in range(7):
-        assert np.all(n_primes(i) == primes[:i])
+def test_golden_powers() -> None:
+    """Test that the powers come from the root of x^(count + 1) = x + 1."""
+    assert golden_powers(0).size == 0
+    assert np.allclose(golden_powers(1), (np.sqrt(5) - 1) / 2)
+    for count in [2, 5, 40]:
+        powers = golden_powers(count)
+        root = 1 / powers[0]
+        assert np.isclose(root ** (count + 1), root + 1)
+        assert np.allclose(powers, root ** -np.arange(1, count + 1))
