@@ -1,8 +1,8 @@
 # Fibonacci Lattice
 
 [![pypi](https://img.shields.io/pypi/v/fiblat)](https://pypi.org/project/fiblat/)
-[![build](https://github.com/hafaio/fibonacci_lattice/actions/workflows/build.yml/badge.svg)](https://github.com/hafaio/fibonacci_lattice/actions/workflows/build.yml)
-[![docs](https://img.shields.io/badge/api-docs-blue)](https://hafaio.github.io/fibonacci_lattice/)
+[![build](https://github.com/hafacc/fibonacci_lattice/actions/workflows/build.yml/badge.svg)](https://github.com/hafacc/fibonacci_lattice/actions/workflows/build.yml)
+[![docs](https://img.shields.io/badge/api-docs-blue)](https://hafa.cc/fibonacci_lattice/)
 
 A simple small python package for generating uniform points on the sphere.
 This module provides to functions `fiblat.cube_lattice` and `fiblat.sphere_lattice`.
