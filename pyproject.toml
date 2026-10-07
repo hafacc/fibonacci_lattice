@@ -1,6 +1,6 @@
 [project]
 name = "fiblat"
-version = "0.8.0"
+version = "0.9.0"
 description = "A package for generating evenly distributed points on a sphere"
 license = "MIT"
 readme = "README.md"
