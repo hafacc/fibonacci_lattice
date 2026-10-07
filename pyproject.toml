@@ -4,6 +4,7 @@ version = "0.8.0"
 description = "A package for generating evenly distributed points on a sphere"
 license = "MIT"
 readme = "README.md"
+keywords = ["fibonacci", "lattice", "sphere", "hypersphere", "numpy"]
 requires-python = ">=3.13"
 dependencies = ["numba>=0.61.0", "numpy>=2.1.3"]
 
