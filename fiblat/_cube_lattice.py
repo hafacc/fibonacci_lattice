@@ -15,7 +15,7 @@ from ._irrational import n_primes
 def cube_lattice(dim: int, num_points: int) -> NDArray[np.float64]:  # pragma: nocover
     """Generate num_points points over the dim dimensional cube.
 
-    Generates `num_points` roughly evenly from the `[0, 1]^dim`.
+    Generates `num_points` points spread roughly evenly over `[0, 1]^dim`.
 
     Parameters
     ----------
